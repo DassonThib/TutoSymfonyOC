@@ -1,0 +1,4 @@
+services:
+#    bva_platform.example:
+#        class: BVA\PlatformBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

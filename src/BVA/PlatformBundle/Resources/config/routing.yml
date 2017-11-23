@@ -1,0 +1,30 @@
+bva_platform_home:
+    path:   /{page}
+    defaults: { _controller: BVAPlatformBundle:Advert:index, page: 1 }
+    requirements: { page: \d* }
+
+bva_platform_view:
+    path:   /advert/{id}
+    defaults: { _controller: BVAPlatformBundle:Advert:view }
+    requirements: { id: \d+ }
+
+bva_platform_add:
+    path:   /add
+    defaults: { _controller: BVAPlatformBundle:Advert:add }
+
+bva_platform_edit:
+    path:   /edit/{id}
+    defaults: { _controller: BVAPlatformBundle:Advert:edit }
+    requirements: { id: \d+ }
+
+bva_platform_delete:
+    path:   /delete/{id}
+    defaults: { _controller: BVAPlatformBundle:Advert:delete }
+    requirements: { id: \d+ }
+
+bva_platform_view_slug:
+    path:   /{year}/{slug}.{format}
+    defaults: { _controller: BVAPlatformBundle:Advert:viewSlug, format: html }
+    requirements:
+        year: \d{4}
+        format: html|xml

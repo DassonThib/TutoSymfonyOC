@@ -1,0 +1,4 @@
+bva_platform:
+    resource: "@BVAPlatformBundle/Resources/config/routing.yml"
+    prefix:   /platform
+

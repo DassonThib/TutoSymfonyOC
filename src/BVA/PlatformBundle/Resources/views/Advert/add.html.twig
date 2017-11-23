@@ -1,0 +1,11 @@
+{# src/BVA/PlatformBundle/Resources/views/Advert/add.html.twig #}
+
+{% extends "BVAPlatformBundle::layout.html.twig" %}
+
+{% block body %}
+    <h2>Ajouter une annonce</h2>
+
+    {{ include('BVAPlatformBundle:Advert:form.html.twig') }}
+
+    <p>Attention : Cette annonce sera ajoutée directement sur la page d'accueil après la validation du formulaire.</p>
+{% endblock %}
