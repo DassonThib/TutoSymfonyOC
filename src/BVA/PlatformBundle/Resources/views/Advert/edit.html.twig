@@ -1,0 +1,26 @@
+{# src/BVA/PlatformBundle/Resources/views/Advert/edit.html.twig #}
+
+{% extends "BVAPlatformBundle::layout.html.twig" %}
+
+{% block title %}
+    Modifier une annonce - {{ parent() }}
+{% endblock %}
+
+{% block bvaplatform_body %}
+
+    <h2>Modifier une annonce</h2>
+
+    {{ include("BVAPlatformBundle:Advert:form.html.twig") }}
+
+    <p>
+        Vous éditez une annonce déjà existante, merci de ne pas changer l'esprit général de l'annonce déjà publiée.
+    </p>
+
+    <p>
+        <a href="{{ path('bva_platform_view', {'id':advert.id}) }}" class="btn btn-default">
+            <i class="glyphicon glyphicon-chevron-left"></li>
+            Retour à l'annonce
+        </a>
+    </p>
+
+{% endblock %}
