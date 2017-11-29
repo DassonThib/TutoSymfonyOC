@@ -34,6 +34,10 @@ class AdvertController extends Controller
         // une page d'erreur 404 (qu'on pourra personnaliser plus tard d'ailleurs)
         if($page < 1) throw new NotFoundHttpException('Page'.$page.' inexistante');
 
+        // On a donc accès au conteneur :
+        $mailer = $this->container->get('mailer');
+        //  On peut envoyer des mails etc
+
         // Ici, on récupérera la liste des annonces, puis on la passera au template
         $listAdverts = array(
             array(
@@ -140,6 +144,18 @@ class AdvertController extends Controller
         // return $this->redirectToRoute('bva_platform_view', array('id' => 5));
 
         // ===========================================================================
+
+        // On récupère le service
+        $antispam = $this->container->get('bva_platform.antispam');
+
+        // On part du principe que $text contient le texte d'un message quelconque.
+        $text = "....";
+        if($antispam->isSpam($text))
+        {
+            throw new \Exception('Votre message a été détecté comme spam !');
+        }
+
+        // Ici le message n'est pas un spam
 
         // La gestion d'un formulaire est particulière mais l'idée est la suivante :
         

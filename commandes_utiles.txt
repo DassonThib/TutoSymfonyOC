@@ -12,3 +12,8 @@ php composer.phar self-update
  * Mettre à jour les dépendances du projet avec le composer.phar, à faire aussi lorsqu'on clone pour la première fois un projet Symfony
  */
 php ..\composer.phar update
+
+/**
+ * Afficher la liste des services disponibles
+ */
+php bin/console debug:container
