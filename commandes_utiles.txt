@@ -17,3 +17,28 @@ php ..\composer.phar update
  * Afficher la liste des services disponibles
  */
 php bin/console debug:container
+
+/**
+ * Créer la base de données via Doctrine
+ */
+php bin/console doctrine:database:create
+
+/**
+ * Générer une nouvelle entité via Doctrine
+ */
+php bin/console doctrine:generate:entity
+
+/**
+ * Voir les requêtes de mise à jour de la base de données pour coller aux entités
+ */ 
+php bin/console doctrine:schema:update --dump-sql
+
+/**
+ * Lancer les requêtes de mise à jour de la base de données pour coller aux entités
+ */ 
+php bin/console doctrine:schema:update --force
+
+/**
+ * Générer les getteur/setteur après avoir modifié une entité
+ */
+php bin/console doctrine:generate:entities Nomdubundle:Nomdelentite
