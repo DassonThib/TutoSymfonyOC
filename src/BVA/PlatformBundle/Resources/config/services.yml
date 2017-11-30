@@ -5,7 +5,7 @@ services:
 
     bva_platform.antispam:
         class: BVA\PlatformBundle\Antispam\BVAAntispam
-        arguments: 
+        arguments: # Tableau d'arguments 
               - "@mailer"
-              - %locale%
-              - 50 # Tableau d'arguments
+              - "%locale%"
+              - 2 
