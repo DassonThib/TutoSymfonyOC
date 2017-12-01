@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a91e0d29-103c-4fdc-9358-1c9df7574e15" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/BVA/PlatformBundle/Controller/AdvertController.php" afterPath="$PROJECT_DIR$/src/BVA/PlatformBundle/Controller/AdvertController.php" />
-      <change beforePath="$PROJECT_DIR$/src/BVA/PlatformBundle/Entity/Advert.php" afterPath="$PROJECT_DIR$/src/BVA/PlatformBundle/Entity/Advert.php" />
-    </list>
+    <list default="true" id="a91e0d29-103c-4fdc-9358-1c9df7574e15" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +17,8 @@
       <file leaf-file-name="AdvertController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/BVA/PlatformBundle/Controller/AdvertController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="164" column="39" lean-forward="true" selection-start-line="164" selection-start-column="39" selection-end-line="164" selection-end-column="39" />
+            <state relative-caret-position="415">
+              <caret line="165" column="49" lean-forward="true" selection-start-line="165" selection-start-column="49" selection-end-line="165" selection-end-column="49" />
               <folding>
                 <element signature="e#108#165#0#PHP" expanded="true" />
                 <element signature="e#2625#2667#0#PHP" expanded="true" />
@@ -289,12 +286,12 @@
       <option name="presentableId" value="Default" />
       <updated>1512117515713</updated>
       <workItem from="1512117517686" duration="4112000" />
-      <workItem from="1512133066191" duration="268000" />
+      <workItem from="1512133066191" duration="1232000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4380000" />
+    <option name="totallyTimeSpent" value="5344000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -419,8 +416,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BVA/PlatformBundle/Controller/AdvertController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="164" column="39" lean-forward="true" selection-start-line="164" selection-start-column="39" selection-end-line="164" selection-end-column="39" />
+        <state relative-caret-position="415">
+          <caret line="165" column="49" lean-forward="true" selection-start-line="165" selection-start-column="49" selection-end-line="165" selection-end-column="49" />
           <folding>
             <element signature="e#108#165#0#PHP" expanded="true" />
             <element signature="e#2625#2667#0#PHP" expanded="true" />
