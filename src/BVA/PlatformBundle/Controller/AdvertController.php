@@ -7,6 +7,7 @@ namespace BVA\PlatformBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use BVA\PlatformBundle\Entity\Advert;
 
@@ -107,14 +108,29 @@ class AdvertController extends Controller
 
         // ============================================================================
 
-        // Ici on récupérera l'annonce correspondant à l'id $id
-        $advert = array(
-            'title'   => 'Recherche développeur Symfony 2',
-            'id'      => $id,
-            'author'  => 'Alexandre',
-            'content' => 'Nous recherchons un développeur Symfony2 débutant à Lyon, Blabla',
-            'date'    => new \Datetime()
-        );
+//        // Ici on récupérera l'annonce correspondant à l'id $id
+//        $advert = array(
+//            'title'   => 'Recherche développeur Symfony 2',
+//            'id'      => $id,
+//            'author'  => 'Alexandre',
+//            'content' => 'Nous recherchons un développeur Symfony2 débutant à Lyon, Blabla',
+//            'date'    => new \Datetime()
+//        );
+
+//      On récupère le repository
+        $repository = $this->getDoctrine()
+            ->getManager()
+            ->getRepository('BVAPlatformBundle:Advert')
+        ;
+
+//      On récupère l'entité correspondant à l'id $id
+        $advert = $repository->find($id);
+
+//      $advert est donc une instance de BVA\PlatformBundle\Entity\Advert
+//      ou null si l'id $id n'existe pas, d'où ce if
+        if($advert === null){
+            throw new NotFoundHttpException("L'annonce d'id ".$id." n'existe pas");
+        }
 
         return $this->render('BVAPlatformBundle:Advert:view.html.twig', array(
             'advert' => $advert

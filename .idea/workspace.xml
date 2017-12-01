@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a91e0d29-103c-4fdc-9358-1c9df7574e15" name="Default" comment="" />
+    <list default="true" id="a91e0d29-103c-4fdc-9358-1c9df7574e15" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/BVA/PlatformBundle/Controller/AdvertController.php" afterPath="$PROJECT_DIR$/src/BVA/PlatformBundle/Controller/AdvertController.php" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,20 +16,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AdvertController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AdvertController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BVA/PlatformBundle/Controller/AdvertController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="165" column="49" lean-forward="true" selection-start-line="165" selection-start-column="49" selection-end-line="165" selection-end-column="49" />
+            <state relative-caret-position="815">
+              <caret line="134" column="9" lean-forward="false" selection-start-line="134" selection-start-column="9" selection-end-line="134" selection-end-column="9" />
               <folding>
                 <element signature="e#108#165#0#PHP" expanded="true" />
-                <element signature="e#2625#2667#0#PHP" expanded="true" />
-                <element signature="e#4794#4835#0#PHP" expanded="true" />
-                <element signature="e#7465#7505#0#PHP" expanded="true" />
-                <element signature="e#8362#8403#0#PHP" expanded="true" />
-                <element signature="e#8597#8640#1#PHP" expanded="true" />
-                <element signature="e#8969#9010#0#PHP" expanded="true" />
+                <element signature="e#2691#2733#0#PHP" expanded="true" />
+                <element signature="e#4979#5005#1#PHP" expanded="true" />
+                <element signature="e#5396#5437#0#PHP" expanded="true" />
+                <element signature="e#8067#8107#0#PHP" expanded="true" />
+                <element signature="e#8964#9005#0#PHP" expanded="true" />
+                <element signature="e#9199#9242#1#PHP" expanded="true" />
+                <element signature="e#9571#9612#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Image.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BVA/PlatformBundle/Entity/Image.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -52,7 +65,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="commandes_utiles.txt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="commandes_utiles.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/commandes_utiles.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
@@ -69,6 +82,7 @@
       <find>addac</find>
       <find>constru</find>
       <find>$advert</find>
+      <find>viewaction</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -130,7 +144,7 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -286,15 +300,15 @@
       <option name="presentableId" value="Default" />
       <updated>1512117515713</updated>
       <workItem from="1512117517686" duration="4112000" />
-      <workItem from="1512133066191" duration="1232000" />
+      <workItem from="1512133066191" duration="5485000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5344000" />
+    <option name="totallyTimeSpent" value="9597000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18020834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -334,12 +348,13 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#108#165#0#PHP" expanded="true" />
-            <element signature="e#2625#2667#0#PHP" expanded="true" />
-            <element signature="e#4794#4835#0#PHP" expanded="true" />
-            <element signature="e#7465#7505#0#PHP" expanded="true" />
-            <element signature="e#8362#8403#0#PHP" expanded="true" />
-            <element signature="e#8597#8640#1#PHP" expanded="true" />
-            <element signature="e#8969#9010#0#PHP" expanded="true" />
+            <element signature="e#2691#2733#0#PHP" expanded="true" />
+            <element signature="e#4979#5005#1#PHP" expanded="true" />
+            <element signature="e#5396#5437#0#PHP" expanded="true" />
+            <element signature="e#8067#8107#0#PHP" expanded="true" />
+            <element signature="e#8964#9005#0#PHP" expanded="true" />
+            <element signature="e#9199#9242#1#PHP" expanded="true" />
+            <element signature="e#9571#9612#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -371,6 +386,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -386,14 +402,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commandes_utiles.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="3" lean-forward="false" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -414,19 +422,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/BVA/PlatformBundle/Repository/ImageRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/BVA/PlatformBundle/Controller/AdvertController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="165" column="49" lean-forward="true" selection-start-line="165" selection-start-column="49" selection-end-line="165" selection-end-column="49" />
+        <state relative-caret-position="815">
+          <caret line="134" column="9" lean-forward="false" selection-start-line="134" selection-start-column="9" selection-end-line="134" selection-end-column="9" />
           <folding>
             <element signature="e#108#165#0#PHP" expanded="true" />
-            <element signature="e#2625#2667#0#PHP" expanded="true" />
-            <element signature="e#4794#4835#0#PHP" expanded="true" />
-            <element signature="e#7465#7505#0#PHP" expanded="true" />
-            <element signature="e#8362#8403#0#PHP" expanded="true" />
-            <element signature="e#8597#8640#1#PHP" expanded="true" />
-            <element signature="e#8969#9010#0#PHP" expanded="true" />
+            <element signature="e#2691#2733#0#PHP" expanded="true" />
+            <element signature="e#4979#5005#1#PHP" expanded="true" />
+            <element signature="e#5396#5437#0#PHP" expanded="true" />
+            <element signature="e#8067#8107#0#PHP" expanded="true" />
+            <element signature="e#8964#9005#0#PHP" expanded="true" />
+            <element signature="e#9199#9242#1#PHP" expanded="true" />
+            <element signature="e#9571#9612#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BVA/PlatformBundle/Entity/Image.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commandes_utiles.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="3" lean-forward="false" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
