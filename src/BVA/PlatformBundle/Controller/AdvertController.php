@@ -8,6 +8,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
+use BVA\PlatformBundle\Entity\Advert;
 
 class AdvertController extends Controller
 {
@@ -155,7 +156,20 @@ class AdvertController extends Controller
             throw new \Exception('Votre message a été détecté comme spam !');
         }
 
-        // Ici le message n'est pas un spam
+        // Création de l'entité
+        $advert = new Advert();
+        $advert->setTitle('Recherche développeur Symfony.');
+        $advert->setAuthor('Alexandre');
+        $advert->setContent("Nous recherchons un développeur Symfony débutant sur Lyon. Blabla...");
+
+        // On récupère l'entity managee
+        $em = $this->getDoctrine()->getManager();
+
+        // Etape 1 : on persiste l'entité
+        $em->persist($advert);
+
+        // Etape 2 : on flush tout ce qui a été persisté avant
+        $em->flush();
 
         // La gestion d'un formulaire est particulière mais l'idée est la suivante :
         
@@ -166,11 +180,11 @@ class AdvertController extends Controller
             $request->getSession()->getFlashBag()->add('notice', 'Annonce bien enregistrée.');
 
             // Puis on redirige vers la page de visualisation de cette annonce
-            return $this->redirectToRoute('bva_platform_view', array('id' => 5));
+            return $this->redirectToRoute('bva_platform_view', array('id' => $advert->getId()));
         }
 
         // Si on est pas en POST, alors on affiche le formulaire
-        return $this->render('BVAPlatformBundle:Advert:add.html.twig');
+        return $this->render('BVAPlatformBundle:Advert:add.html.twig', array('advert' => $advert));
     }
 
     public function editAction($id, Request $request)

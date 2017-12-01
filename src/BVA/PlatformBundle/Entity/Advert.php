@@ -22,9 +22,9 @@ class Advert
     private $id;
 
     /**
-     * @var datetime_immutable
+     * @var datetime
      *
-     * @ORM\Column(name="date", type="datetime_immutable")
+     * @ORM\Column(name="date", type="datetime")
      */
     private $date;
 
@@ -62,6 +62,12 @@ class Advert
     public function getId()
     {
         return $this->id;
+    }
+
+    public function __construct()
+    {
+        // Par défault, la date de l'annonce est la date d'aujourd'hui
+        $this->date = new \DateTime();
     }
 
     /**
