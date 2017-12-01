@@ -55,6 +55,11 @@ class Advert
     private $published = true;
 
     /**
+     * @ORM\OneToOne(targetEntity="BVA\PlatformBundle\Entity\Image", cascade={"persist"})
+     */
+    private $image;
+
+    /**
      * Get id
      *
      * @return int
@@ -73,7 +78,7 @@ class Advert
     /**
      * Set date
      *
-     * @param datetime_immutable $date
+     * @param datetime $date
      *
      * @return Advert
      */
@@ -87,7 +92,7 @@ class Advert
     /**
      * Get date
      *
-     * @return datetime_immutable
+     * @return datetime
      */
     public function getDate()
     {
@@ -188,5 +193,29 @@ class Advert
     public function getPublished()
     {
         return $this->published;
+    }
+
+    /**
+     * Set image
+     *
+     * @param \BVA\PlatformBundle\Entity\Image $image
+     *
+     * @return Advert
+     */
+    public function setImage(\BVA\PlatformBundle\Entity\Image $image = null)
+    {
+        $this->image = $image;
+
+        return $this;
+    }
+
+    /**
+     * Get image
+     *
+     * @return \BVA\PlatformBundle\Entity\Image
+     */
+    public function getImage()
+    {
+        return $this->image;
     }
 }

@@ -4,6 +4,7 @@
 
 namespace BVA\PlatformBundle\Controller;
 
+use BVA\PlatformBundle\Entity\Image;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -178,6 +179,14 @@ class AdvertController extends Controller
         $advert->setAuthor('Alexandre');
         $advert->setContent("Nous recherchons un développeur Symfony débutant sur Lyon. Blabla...");
 
+        // Création de l'entité image
+        $image = new Image();
+        $image->setUrl("http://sdz-upload.s3.amazonaws.com/prod/upload/job-de-reve.jpg");
+        $image->setAlt("Job de rêve");
+
+        // on lie l'image à l'annonce
+        $advert->setImage($image);
+
         // On récupère l'entity managee
         $em = $this->getDoctrine()->getManager();
 
@@ -247,5 +256,23 @@ class AdvertController extends Controller
         return $this->render('BVAPlatformBundle:Advert:menu.html.twig', array(
             'listAdverts' => $listAdverts
         ));
-    }    
+    }
+
+    public function aditImageAction($advertId){
+        $em = $this->getDoctrine()->getManager();
+
+        // On récupère l'annonce
+        $advert = $em->getRepository("BVAPlatformBundle:Advert")->find($advertId);
+
+        // On modifie l'url de l'image par exemple
+        $advert->getImage()->setUrl('test.png');
+
+        // On a pas besoin de persister l'annonce ou l'image.
+        // Rappelez-vous, ces entités sont automatiquement persistées car on les a récupérées depuis Doctrine lui-même.
+
+        // On déclenche la modification
+        $em->flush();
+
+        return new Response('OK');
+    }
 }
