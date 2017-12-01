@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a91e0d29-103c-4fdc-9358-1c9df7574e15" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/commandes_utiles.txt" afterPath="$PROJECT_DIR$/commandes_utiles.txt" />
+      <change beforePath="$PROJECT_DIR$/src/BVA/PlatformBundle/Entity/Application.php" afterPath="$PROJECT_DIR$/src/BVA/PlatformBundle/Entity/Application.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,18 +21,49 @@
       <file leaf-file-name="AdvertController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BVA/PlatformBundle/Controller/AdvertController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="815">
-              <caret line="134" column="9" lean-forward="false" selection-start-line="134" selection-start-column="9" selection-end-line="134" selection-end-column="9" />
+            <state relative-caret-position="832">
+              <caret line="275" column="34" lean-forward="false" selection-start-line="275" selection-start-column="34" selection-end-line="275" selection-end-column="34" />
               <folding>
-                <element signature="e#108#165#0#PHP" expanded="true" />
-                <element signature="e#2691#2733#0#PHP" expanded="true" />
-                <element signature="e#4979#5005#1#PHP" expanded="true" />
-                <element signature="e#5396#5437#0#PHP" expanded="true" />
-                <element signature="e#8067#8107#0#PHP" expanded="true" />
-                <element signature="e#8964#9005#0#PHP" expanded="true" />
-                <element signature="e#9199#9242#1#PHP" expanded="true" />
-                <element signature="e#9571#9612#0#PHP" expanded="true" />
+                <element signature="e#108#144#0#PHP" expanded="true" />
+                <element signature="e#2728#2770#0#PHP" expanded="true" />
+                <element signature="e#5016#5042#1#PHP" expanded="true" />
+                <element signature="e#5433#5474#0#PHP" expanded="true" />
+                <element signature="e#8376#8416#0#PHP" expanded="true" />
+                <element signature="e#9273#9314#0#PHP" expanded="true" />
+                <element signature="e#9508#9551#1#PHP" expanded="true" />
+                <element signature="e#9880#9921#0#PHP" expanded="true" />
+                <element signature="e#10160#10186#1#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Application.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BVA/PlatformBundle/Entity/Application.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="590">
+              <caret line="52" column="4" lean-forward="false" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="commandes_utiles.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/commandes_utiles.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="94" lean-forward="false" selection-start-line="21" selection-start-column="94" selection-end-line="21" selection-end-column="94" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BVA/PlatformBundle/Resources/views/Advert/view.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="66" lean-forward="false" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -59,18 +91,8 @@
       <file leaf-file-name="Advert.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BVA/PlatformBundle/Entity/Advert.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="20" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="commandes_utiles.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/commandes_utiles.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="3" lean-forward="false" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+            <state relative-caret-position="-1365">
+              <caret line="94" column="23" lean-forward="false" selection-start-line="94" selection-start-column="23" selection-end-line="94" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -80,10 +102,10 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>addac</find>
       <find>constru</find>
       <find>$advert</find>
       <find>viewaction</find>
+      <find>addac</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -92,9 +114,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/BVA/PlatformBundle/Entity/Advert.php" />
-        <option value="$PROJECT_DIR$/src/BVA/PlatformBundle/Controller/AdvertController.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/BVA/PlatformBundle/Entity/Advert.php" />
+        <option value="$PROJECT_DIR$/src/BVA/PlatformBundle/Resources/views/Advert/view.html.twig" />
+        <option value="$PROJECT_DIR$/src/BVA/PlatformBundle/Controller/AdvertController.php" />
+        <option value="$PROJECT_DIR$/src/BVA/PlatformBundle/Entity/Application.php" />
+        <option value="$PROJECT_DIR$/commandes_utiles.txt" />
       </list>
     </option>
   </component>
@@ -302,12 +327,12 @@
       <option name="presentableId" value="Default" />
       <updated>1512117515713</updated>
       <workItem from="1512117517686" duration="4112000" />
-      <workItem from="1512133066191" duration="5633000" />
+      <workItem from="1512133066191" duration="8472000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9745000" />
+    <option name="totallyTimeSpent" value="12584000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -349,14 +374,15 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#108#165#0#PHP" expanded="true" />
-            <element signature="e#2691#2733#0#PHP" expanded="true" />
-            <element signature="e#4979#5005#1#PHP" expanded="true" />
-            <element signature="e#5396#5437#0#PHP" expanded="true" />
-            <element signature="e#8067#8107#0#PHP" expanded="true" />
-            <element signature="e#8964#9005#0#PHP" expanded="true" />
-            <element signature="e#9199#9242#1#PHP" expanded="true" />
-            <element signature="e#9571#9612#0#PHP" expanded="true" />
+            <element signature="e#108#144#0#PHP" expanded="true" />
+            <element signature="e#2728#2770#0#PHP" expanded="true" />
+            <element signature="e#5016#5042#1#PHP" expanded="true" />
+            <element signature="e#5433#5474#0#PHP" expanded="true" />
+            <element signature="e#8376#8416#0#PHP" expanded="true" />
+            <element signature="e#9273#9314#0#PHP" expanded="true" />
+            <element signature="e#9508#9551#1#PHP" expanded="true" />
+            <element signature="e#9880#9921#0#PHP" expanded="true" />
+            <element signature="e#10160#10186#1#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -408,14 +434,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BVA/PlatformBundle/Entity/Advert.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="20" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/BVA/PlatformBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -432,20 +450,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BVA/PlatformBundle/Controller/AdvertController.php">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="815">
-          <caret line="134" column="9" lean-forward="false" selection-start-line="134" selection-start-column="9" selection-end-line="134" selection-end-column="9" />
-          <folding>
-            <element signature="e#108#165#0#PHP" expanded="true" />
-            <element signature="e#2691#2733#0#PHP" expanded="true" />
-            <element signature="e#4979#5005#1#PHP" expanded="true" />
-            <element signature="e#5396#5437#0#PHP" expanded="true" />
-            <element signature="e#8067#8107#0#PHP" expanded="true" />
-            <element signature="e#8964#9005#0#PHP" expanded="true" />
-            <element signature="e#9199#9242#1#PHP" expanded="true" />
-            <element signature="e#9571#9612#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="306">
+          <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -457,18 +466,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/src/BVA/PlatformBundle/Entity/Advert.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+        <state relative-caret-position="-1365">
+          <caret line="94" column="23" lean-forward="false" selection-start-line="94" selection-start-column="23" selection-end-line="94" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BVA/PlatformBundle/Resources/views/Advert/view.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="66" lean-forward="false" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BVA/PlatformBundle/Controller/AdvertController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="832">
+          <caret line="275" column="34" lean-forward="false" selection-start-line="275" selection-start-column="34" selection-end-line="275" selection-end-column="34" />
+          <folding>
+            <element signature="e#108#144#0#PHP" expanded="true" />
+            <element signature="e#2728#2770#0#PHP" expanded="true" />
+            <element signature="e#5016#5042#1#PHP" expanded="true" />
+            <element signature="e#5433#5474#0#PHP" expanded="true" />
+            <element signature="e#8376#8416#0#PHP" expanded="true" />
+            <element signature="e#9273#9314#0#PHP" expanded="true" />
+            <element signature="e#9508#9551#1#PHP" expanded="true" />
+            <element signature="e#9880#9921#0#PHP" expanded="true" />
+            <element signature="e#10160#10186#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BVA/PlatformBundle/Entity/Application.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="590">
+          <caret line="52" column="4" lean-forward="false" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/commandes_utiles.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="3" lean-forward="false" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+        <state relative-caret-position="357">
+          <caret line="21" column="94" lean-forward="false" selection-start-line="21" selection-start-column="94" selection-end-line="21" selection-end-column="94" />
           <folding />
         </state>
       </provider>

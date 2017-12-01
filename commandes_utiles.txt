@@ -19,7 +19,7 @@ php ..\composer.phar update
 php bin/console debug:container
 
 /**
- * Créer la base de données via Doctrine
+ * Créer la base de données via Doctrine en fonctione des parametres du fichier parameters.yml
  */
 php bin/console doctrine:database:create
 
